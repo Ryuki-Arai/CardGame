@@ -4,11 +4,11 @@ using UnityEngine;
 
 public abstract class Card
 {
-    public int level;
-    public int atk, def, tec, hp;
-    public Category category;
-    public int rarity;
-    public Ability?[] ability = new Ability[4];
+    private int level;
+    private int atk, def, tec, hp;
+    private Category category;
+    private int rarity;
+    private Ability?[] ability = new Ability[4];
 
     public int Level { get => level; }
     public int Atk { get => atk; }
@@ -31,14 +31,19 @@ public abstract class Card
         switch (category)
         {
             case Category.Neutral:
+
                 break;
             case Category.Fire:
+
                 break;
             case Category.Water:
+
                 break;
             case Category.Breeze:
+
                 break;
             case Category.Grand:
+
                 break;
         }
     }
